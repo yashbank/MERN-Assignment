@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Bookstore</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">BOOKSTORE</div>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Books</a></li>
+          <li><a href="#">Cart</a></li>
+          <li><button id="loginBtn">Login</button></li>
+          <li><button id="signupBtn">Sign Up</button></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="books-section"></section>
+
+      <section class="cart-section"></section>
+    </main>
+
+    <div id="loginModal" class="modal">
+      <div class="modal-content">
+        <label for="loginUsername">Username:</label>
+        <input
+          type="text"
+          id="loginUsername"
+          placeholder="Enter your username"
+        />
+
+        <label for="loginPassword">Password:</label>
+        <input
+          type="password"
+          id="loginPassword"
+          placeholder="Enter your password"
+        />
+
+        <button id="loginSubmit">Login</button>
+      </div>
+    </div>
+
+    <div id="signupModal" class="modal">
+      <div class="modal-content">
+        <label for="signupUsername">Username:</label>
+        <input
+          type="text"
+          id="signupUsername"
+          placeholder="Choose a username"
+        />
+
+        <label for="signupPassword">Password:</label>
+        <input
+          type="password"
+          id="signupPassword"
+          placeholder="Choose a password"
+        />
+
+        <button id="signupSubmit">Sign Up</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
